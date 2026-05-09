@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Verified User Dashboard</span>
+
+        <h1>Hoş Geldin, {{ username }}</h1>
+
+        <div class="info-box">
+            <p>Kimlik doğrulaman başarıyla tamamlandı.</p>
+            <p>Challenge-response doğrulaması geçildi.</p>
+            <p>Gizli bilgi sistemde açık şekilde saklanmadı.</p>
+            <br>
+
+<p>JWT Token:</p>
+
+<div class="code-text">
+    {{ token }}
+</div>
+        </div>
+
+        <a class="btn" href="/">
+            Çıkış Yap
+        </a>
+    </div>
+
+</body>
+</html>

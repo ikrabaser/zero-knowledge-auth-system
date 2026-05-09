@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Secure Identity Verification</span>
+
+        <h1>Giriş Yap</h1>
+
+        <form method="POST">
+
+            <input 
+                type="text"
+                name="username"
+                placeholder="Kullanıcı Adı"
+                required
+            >
+
+            <input 
+                type="password"
+                name="secret"
+                placeholder="Gizli Bilgi"
+                required
+            >
+
+            <button type="submit">
+                Giriş Yap
+            </button>
+
+        </form>
+
+        <br>
+
+        <a class="btn secondary" href="/">
+            Ana Sayfa
+        </a>
+
+    </div>
+
+</body>
+</html>

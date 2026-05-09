@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sonuç</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <span class="badge">Authentication Result</span>
+
+        <h1>İşlem Sonucu</h1>
+
+        <div class="info-box">
+            <p>
+                {{ mesaj | safe }}
+            </p>
+        </div>
+
+        <a class="btn" href="/">
+            Ana Sayfa
+        </a>
+
+    </div>
+
+</body>
+</html>
